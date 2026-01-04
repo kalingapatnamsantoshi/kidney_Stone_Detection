@@ -1,26 +1,77 @@
-# kidney_Stone_Detection
-# Glaucoma Eye Disease Detector
+# 🩺 Kidney Stone Detection System using Machine Learning
+# 📌 Project Overview
 
-A machine learning project to detect glaucoma from eye images using TensorFlow/Keras.
+Kidney stones are a common and painful medical condition that often requires early detection for effective treatment.
+This project presents a Kidney Stone Detection System built using Machine Learning and Deep Learning techniques to classify kidney images as Stone or Normal.
+The model analyzes medical images and predicts whether a kidney stone is present, helping in early diagnosis and decision support.
 
-## Features
-- Classifies eye images as **Normal** or **Glaucoma**
-- Includes pre-processing and training scripts
-- Provides a pre-trained model for quick predictions
+# 🎯 Objectives
 
-## Folder Structure
-- `src/` → Python scripts (training, prediction)
-- `notebooks/` → Jupyter notebooks with analysis
-- `models/` → Saved models (.h5)
-- `assets/` → Sample eye images
-- `docs/` → Screenshots, diagrams
+Detect kidney stones from medical images
+Reduce manual diagnosis effort
+Provide fast and reliable predictions
+Build a beginner-friendly yet practical ML project
 
-## How to Run
-1. Install required packages:
+# 🛠️ Technologies Used
+
+Python(version 3.13.1)
+TensorFlow / Keras
+NumPy
+OpenCV
+Matplotlib
+Scikit-learn
+Windsurf
+
+🗂️ Project Structure
+Kidney-Stone-Detector/
+│
+├── dataset/
+│   ├── Stone/
+│   └── Normal/
+│
+├── model/
+│   └── kidney_stone_model.h5
+│
+├── train_model.py
+├── test_model.py
+├── requirements.txt
+└── README.md
+
+#📊 Dataset Information
+
+The dataset consists of kidney medical images
+
+Two classes:
+Stone – images containing kidney stones
+Normal – images without kidney stones
+Dataset is not included in this repository for experimentation and learning purposes
+
+⚠️ This dataset is intended for educational and research use only.
+
+#⚙️ How It Works
+
+Images are loaded and resized
+Preprocessing is applied (normalization, labeling)
+A Convolutional Neural Network (CNN) is trained
+
+#The trained model predicts:
+Stone
+Normal
+
+🚀 Installation & Setup
+Step 1: Clone the Repository
+git clone https://github.com/your-username/kidney-stone-detector.git
+cd kidney-stone-detector
+
+Step 2: Install Dependencies
 pip install -r requirements.txt
-2. Run training (optional):
-python src/train_glaucoma_model.py
-3. Run prediction:
-python src/predict_glaucoma.py
-4. Run Streamlit app:
-streamlit run app.py
+
+Step 3: Train the Model
+python train_model.py
+
+Step 4: Test the Model
+python test_model.py
+
+Step 5: Run the model
+streamlit app.py
+
