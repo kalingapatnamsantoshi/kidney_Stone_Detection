@@ -1,0 +1,14 @@
+1. Install Dependecies
+pip install -r requirements.txt
+
+2. Train the Model
+python train.py
+You must see: Model trained and saved as kidney_stone_detector.h5
+
+3. Test The Model
+python test_model.py
+You must see: Model loaded successfully!
+
+4. Run the Streamlit App
+streamlit run app.py
+Browser opens → upload image → prediction.
